@@ -1,0 +1,140 @@
+/* 화면 중앙 정렬 */
+body {
+  display: flex;
+  justify-content: center; /* 가로 중앙 */
+  align-items: flex-start; /* 위에서 조금 떨어지게 시작 */
+  min-height: 100vh;
+  margin: 0;
+  padding: 30px 10px; /* 약간의 여백 */
+  background-color: #f5f5f5; /* 전체 배경도 살짝 밝게 */
+}
+
+/* 전체 앱 중앙 정렬 */
+.todo-app {
+  max-width: 600px;
+  margin: 50px auto; /* 상하 50px, 좌우 auto → 가운데 정렬 */
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 헤더 */
+.todo-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.todo-header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.todo-header h2 {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* 입력 섹션 */
+.todo-input-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.todo-input-title,
+.todo-input-content {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+}
+
+.todo-add-button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.todo-add-button:hover {
+  background-color: #45a049;
+}
+
+/* 할 일 목록 */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  background-color: #fff;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.todo-title {
+  display: inline-block;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.todo-title.todo-complete {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo-toggle-button,
+.todo-delete-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.todo-toggle-button {
+  background-color: #2196f3;
+  color: white;
+}
+
+.todo-toggle-button:hover {
+  background-color: #1976d2;
+}
+
+.todo-delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.todo-delete-button:hover {
+  background-color: #d32f2f;
+}
+
+/* 내용 표시 */
+.todo-content {
+  margin-top: 8px;
+  padding: 8px;
+  background-color: #fafafa;
+  border-left: 3px solid #2196f3;
+  color: #444;
+  font-style: italic;
+}
+
+/* Footer */
+.todo-footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #777;
+  font-size: 0.9rem;
+}
